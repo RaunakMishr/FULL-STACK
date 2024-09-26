@@ -1,0 +1,43 @@
+/*var studentId = 3456;
+    let studentName = "Shiv";
+    const fees = 700000;
+
+
+console.log(studentId);
+console.log(studentName);
+console.log(fees);
+console.log("Hello World!");
+
+//let,const:block mei hai scope
+ //var :function scope
+ function sum(){
+     let sum=55;
+     if(sum==55){
+         var name="abcde";
+
+     }
+     console.log(name);
+ }
+ sum();
+ console.log(name);*/
+
+ let a=10;
+ console.log(typeof(a));
+
+ let b=10.657;
+ console.log(typeof(b));//number
+
+ let name='abcde';
+ console.log(typeof(name));//string
+
+let flag=true;
+console.log(typeof(flag));//boolean
+
+let salary;
+console.log(typeof(salary));//undefined
+
+let id=null;
+console.log(typeof(id));//object
+
+let bigNumber=BigInt("7836288895");
+console.log(typeof(bigNumber));
