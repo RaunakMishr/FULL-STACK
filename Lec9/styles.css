@@ -1,0 +1,60 @@
+.container{
+    border: 2px solid red;
+    height: 90vh;
+}
+.box{
+    border: 2px solid green;
+    height: 100px;
+    width: 100px;
+    margin: 100px;
+    position: relative;
+    animation-name: slide;
+    animation-duration: 5s;
+    /* transition: transform, background-color;
+    transition-duration: 5s;
+    transition-delay: 1s;
+    transition-timing-function: cubic-bezier(0.97,-0.52, 0.4, 1.24); */
+}
+/* .box:hover{ */
+    /* background-color: red; */
+    /* /* transform: translate(200px, 101px); */
+    /* transform: scale(2, 2); */ 
+    /* transform: rotate(360deg); */
+    /* transform: skewX(50deg); */
+    /* border-radius: 40%; */
+/* } */
+
+
+@keyframes slide {
+    0%{
+        top: 0px;
+        left: 0px;
+        background-color: red;
+        transform: rotate(0deg);
+    }
+    25%{
+        top: 0px;
+        left: 500px;
+        background-color: rgb(0, 21, 255);
+        border-radius: 50%;
+    }
+    50%{
+        top: 200px;
+        left: 500px;
+        background-color: red;
+        border-radius: 0%;
+    }
+    75%{
+        top: 200px;
+        left: 0px;
+        background-color: rgb(0, 255, 251);
+        border-radius: 50%;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+        background-color: rgb(0, 255, 136);
+        transform: rotate(360deg);
+        border-radius: 0%;
+    }
+}
